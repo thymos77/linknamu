@@ -5,8 +5,8 @@ import { profile } from "@/data/profile";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-md flex-col items-center px-4 pb-16 pt-14 sm:pt-20">
-      <div className="fixed right-4 top-4">
+    <main className="mx-auto flex min-h-screen w-full max-w-[440px] flex-col items-center px-6 pb-20 pt-20 sm:pt-28">
+      <div className="fixed right-5 top-5">
         <ThemeToggle />
       </div>
 
@@ -14,7 +14,7 @@ export default function Home() {
       <ProfileHeader name={profile.name} bio={profile.bio} imageUrl={profile.imageUrl} />
 
       {/* 하단: 링크 카드 세로 목록 */}
-      <nav aria-label="링크 목록" className="mt-10 w-full">
+      <nav aria-label="링크 목록" className="mt-12 w-full">
         <ul className="flex flex-col gap-4">
           {profile.links.map((link) => (
             <li key={link.id}>

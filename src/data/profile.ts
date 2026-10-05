@@ -12,14 +12,13 @@ export type Profile = {
 };
 
 export const profile: Profile = {
-  name: "김클로",
-  bio: "세계 최강 바이브코더",
+  name: "김민석",
+  bio: "삼성전자 MES팀 | 요즈음에는 리더십, AI 개발에 관심이 많아요.",
   // public/ 폴더에 사진을 넣고 경로를 지정하세요. 예: "/profile.jpg"
   imageUrl: undefined,
-  // TODO: 실제 주소로 교체
   links: [
-    { id: "github", title: "GitHub", url: "https://github.com" },
-    { id: "linkedin", title: "LinkedIn", url: "https://www.linkedin.com" },
-    { id: "blog", title: "Blog", url: "https://example.com" },
+    { id: "github", title: "깃허브", url: "https://github.com/thymos77" },
+    { id: "blog", title: "블로그", url: "https://github.com/thymos77" },
+    { id: "email", title: "이메일", url: "mailto:thymos77@gmail.com" },
   ],
 };

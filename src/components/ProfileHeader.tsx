@@ -12,18 +12,18 @@ export default function ProfileHeader({ name, bio, imageUrl }: Props) {
         <img
           src={imageUrl}
           alt={`${name} 프로필 사진`}
-          className="h-32 w-32 rounded-full object-cover ring-4 ring-white shadow-md dark:ring-gray-800 sm:h-36 sm:w-36"
+          className="h-28 w-28 rounded-full object-cover shadow-[0_8px_30px_-8px_rgba(180,110,70,0.35)] ring-4 ring-white/70 dark:ring-white/10 sm:h-32 sm:w-32"
         />
       ) : (
         <div
           aria-hidden
-          className="flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 to-green-600 text-4xl font-bold text-white ring-4 ring-white shadow-md dark:ring-gray-800 sm:h-36 sm:w-36"
+          className="flex h-28 w-28 items-center justify-center rounded-full bg-gradient-to-br from-[#f6c7a1] to-[#e3906a] text-4xl font-semibold text-white shadow-[0_8px_30px_-8px_rgba(180,110,70,0.45)] ring-4 ring-white/70 dark:from-[#b8755a] dark:to-[#7e4634] dark:ring-white/10 sm:h-32 sm:w-32"
         >
           {name.slice(0, 1)}
         </div>
       )}
-      <h1 className="mt-5 text-2xl font-bold">{name}</h1>
-      <p className="mt-1 text-sm text-gray-600 dark:text-gray-400 sm:text-base">{bio}</p>
+      <h1 className="mt-6 text-2xl font-bold tracking-tight text-stone-900 dark:text-stone-50">{name}</h1>
+      <p className="mt-2 max-w-[19rem] text-[15px] leading-relaxed text-stone-600 dark:text-stone-400">{bio}</p>
     </section>
   );
 }
